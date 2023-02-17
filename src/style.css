@@ -73,7 +73,7 @@ html {
       flex-wrap: wrap;
     }
 
-    #filter{
+    #directors{
       background-color: #ffffff;
       color: #5bcfcc;
       border-radius:25px;
@@ -102,7 +102,6 @@ html {
 
     #root{
         position: static;
-        align-items: top;    
         min-height: 40px;
         display: flex;
         justify-content: center;
@@ -125,7 +124,6 @@ html {
     }
 
       .card img {
-        align-items: top;
         width: 200px;
         height: 280px;
         object-fit: cover;

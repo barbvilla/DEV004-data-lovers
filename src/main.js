@@ -1,5 +1,5 @@
 
-import { alphabeticOrderAsc, alphabeticOrderDes } from "./data.js";
+import { alphabeticOrderAsc, alphabeticOrderDes, filteredDirector, mappedDirector } from "./data.js";
 import data from "./data/ghibli/ghibli.js";
 
 const movies = data.films;
@@ -36,7 +36,11 @@ const orderBy = (copyMovies) => {
       titleImage(orderZA);
     }
   });  
-}
+};
 orderBy(copyMovies);
-  
 
+const director = mappedDirector(movies);
+console.log(director);
+
+const nameDirector = filteredDirector(director);
+console.log(nameDirector);
