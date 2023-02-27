@@ -18,7 +18,6 @@ const titleImage = (movies) => {
     movieDiv.innerHTML += ` <img src="${movie.poster}" alt="imágen de la película"><h2>${movie.title}</h2><div id="cuadro"></div><h3>Director:${movie.director}</h3>
     <p>Release Date:<br>${movie.release_date}</p><p1>Rate:<br> ${movie.rt_score}</p1><p2>${movie.description}</p2>`//siempre poner en imágenes alt
     root.appendChild(movieDiv);
-
   }
 };
 titleImage(movies);
@@ -47,7 +46,6 @@ const orderBy = (copyMovies) => {
     }
   });
 }
-
 orderBy(copyMovies);
 
 const director = mappedDirector(movies);
