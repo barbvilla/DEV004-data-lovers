@@ -141,35 +141,21 @@ html {
         padding-bottom:10px;
       }
 
-footer{
-  background-color: #f9ccc8;
-  background-size: cover;
-  position: fixed;
-  display: flex;
+footer {
+  background-color: #F9CCC8;
   height: 100px;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  padding: 1%;
-  font-size: 30px;
-}
-
-  .rrss { 
   display: flex;
-  flex-direction: row;
-  }
-
-    a{
-      color: white;
-      text-align: left;
-    }
-   
-
-  .creartors {  
-  display: block;
-  font-family: 'Ghibli';
-  align-content: top;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transform: translate(0,135em);
 }
-  p{
-    font-size: 20px;
+  .rss{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  a{
+    color: white;
+    text-align: left;
   }
