@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -11,30 +11,26 @@
 </head>
 
 <body>
-  
+
   <header>
-    <img src="logo.png">
-    <div id="box"></div>
-    <div id="rectangle"></div>
+    <img src="logo.png" id="logo" alt="Studio Ghibli logo">
     <h1>Studio Ghibli Data Movies</h1>
   </header>
 
-  <main>
-    <div class="barra">
-      <div class="order">      
-        <select name="order" id="order">
-          <option value="0" disabled selected>Order by</option>
-          <option value="default">Default</option>
-          <option value="a-z">A-Z</option>
-          <option value="z-a">Z-A</option>
-        </select>
-        <select name="filter by director" id="directors">
-          <option value="0" disabled selected>Filter by director</option>
-          <option value="all">All</option>
-        </select>      
-      </div>
-      <div id="root"></div>
-      <button href=""> Back to top</button>
+  <main class="barra">
+    <img src="kodama.png" id="kodama"alt="Kodama from Mononoke Princess">
+    <img src="kodama.png" id="kodama1"alt="Kodama from Mononoke Princess">
+    <div class="order">
+      <div> </div>
+      <select name="order" id="order">
+        <option value="0" disabled selected>Order by</option>
+        <option value="a-z">A-Z</option>
+        <option value="z-a">Z-A</option>
+      </select>
+      <select name="filter by director" id="directors">
+        <option value="0" disabled selected>Filter</option>
+        <option value="all">All</option>
+      </select>
     </div>
   </main>
 

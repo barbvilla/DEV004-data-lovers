@@ -1,5 +1,7 @@
 
+
 import { alphabeticOrderAsc, alphabeticOrderDes, filteredDirector, mappedDirector, calculate } from "./data.js";
+
 import data from "./data/ghibli/ghibli.js";
 
 const movies = data.films;
@@ -13,14 +15,17 @@ const titleImage = (movies) => {
     const movieDiv = document.createElement("div");
     movieDiv.classList.add("card"); //clase para editar en css
     //con movie.title llamamos a la constante y le asignamos una etiqueta
-    movieDiv.innerHTML += `<h2>${movie.title}</h2>
-    <img src="${movie.poster}" alt="imágen de la película">`//siempre poner en imágenes alt
+    movieDiv.innerHTML += ` <img src="${movie.poster}" alt="imágen de la película"><h2>${movie.title}</h2><div id="cuadro"></div><h3>Director:${movie.director}</h3>
+    <p>Release Date:<br>${movie.release_date}</p><p1>Rate:<br> ${movie.rt_score}</p1><p2>${movie.description}</p2>`//siempre poner en imágenes alt
     root.appendChild(movieDiv);
+
   }
 };
 titleImage(movies);
 
+
 const copyMovies = structuredClone(movies);
+
 const orderBy = (copyMovies) => {
   const buttonSelection = document.getElementById("order")
   buttonSelection.addEventListener("change", () => {
@@ -35,12 +40,14 @@ const orderBy = (copyMovies) => {
       const orderZA = alphabeticOrderDes(copyMovies);
       titleImage(orderZA);
     }
+
     else if (selectedOption === "default"){
       root.innerHTML = "";
       titleImage(movies);      
     }
   });
 }
+
 orderBy(copyMovies);
 
 const director = mappedDirector(movies);
@@ -100,4 +107,5 @@ document.getElementById("directors").addEventListener("change", function(){
 });
 
 calculate(movies);
+
 

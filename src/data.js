@@ -1,4 +1,3 @@
-
 export const alphabeticOrderAsc = function (movies) {
   const orderAZ = movies.sort((a, b) => (a.title > b.title) ? 1 : (a.title < b.title) ? -1 : 0);
   return orderAZ;  
