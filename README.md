@@ -41,13 +41,11 @@ El sitio fue creado para los fan de Studio Ghibli, para que puedan ver informaci
 
 ## 4. Historias y criterios de aceptación
 
-### 1. Yo, como fan de Ghibli quiero visualizar las películas para saber cuales son. 
+#### 1. Yo, como fan de Ghibli quiero visualizar las películas para saber cuales son. 
 
 Criterios de aceptación:
 	Desplegaremos los posters de las películas.
 Desplegaremos los títulos de las películas
-
-
 
 #### 2-Yo, como fan de Ghibli quiero visualizar las películas por orden alfabético de la A-Z y Z-A.
 
@@ -55,18 +53,17 @@ Desplegaremos los títulos de las películas
 	Pondremos una barra que ordene las películas por orden alfabético A-Z.
 	La misma barra ordenará Z-A.
 
-
 #### 3- Yo, como fan de Ghibli quiero filtrar las películas por director para encontrarlas de inmediato.
 
 	Criterios:
 	Habrá una barra que filtre la película según el director.
 
-### 4-Yo, como fan de ghibli quiero que al pasar el cursor por la película, ésta me muestre la información para saber de qué se trata
+#### 4-Yo, como fan de ghibli quiero que al pasar el cursor por la película, ésta me muestre la información para saber de qué se trata
 
   Criterios:
   Se desplegará un cuadro con la información dentro al pasar el cursor por encima.
 
-### 5-Yo, como fan de Ghibli, quiero tener la estadística de cuántas mujeres son protagonistas.
+#### 5-Yo, como fan de Ghibli, quiero tener la estadística de cuántas mujeres son protagonistas.
 
   Criterios:
   Dentro del cuadro de información desplegado en la historia 4 se encontrará la cantidad de hombres y mujeres por película.
