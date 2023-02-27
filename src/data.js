@@ -22,6 +22,11 @@ export const filteredDirector = function(movies) {
   return onlyDirectorName
 }
 
+export const mappedTitle = function(movies) {
+  const titles = movies.map(anyArray => anyArray.title)
+  return titles
+}
+
 export const calculate = function(movies) {  
   const moviesGender = [];
   for (let i=0; i<movies.length; i++){
@@ -42,6 +47,10 @@ export const calculate = function(movies) {
     movieGender.push(maleCount);
     moviesGender.push(movieGender);       
   }
-  console.log(moviesGender);
+  
+  //console.log(moviesTitleGender);
   return moviesGender
 }
+
+  
+

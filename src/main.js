@@ -1,6 +1,6 @@
 
 
-import { alphabeticOrderAsc, alphabeticOrderDes, filteredDirector, mappedDirector, calculate } from "./data.js";
+import { alphabeticOrderAsc, alphabeticOrderDes, filteredDirector, mappedDirector, calculate, mappedTitle } from "./data.js";
 
 import data from "./data/ghibli/ghibli.js";
 
@@ -39,7 +39,6 @@ const orderBy = (copyMovies) => {
       const orderZA = alphabeticOrderDes(copyMovies);
       titleImage(orderZA);
     }
-
     else if (selectedOption === "default"){
       root.innerHTML = "";
       titleImage(movies);      
@@ -104,6 +103,14 @@ document.getElementById("directors").addEventListener("change", function(){
   titleImage(directorFilter);
 });
 
-calculate(movies);
-
-
+const titles = mappedTitle(movies);
+const moviesGender = calculate(movies);
+const moviesTitleGender = []
+for (let i = 0; i<movies.length; i++){    
+  moviesTitleGender.push({
+    Name: titles[i],
+    Female: moviesGender[i][0],
+    Male: moviesGender[i][1]
+  })      
+}
+console.log(moviesTitleGender);
