@@ -2,6 +2,7 @@ html {
   font-family: sans-serif;
   color: white;
 }
+
 body {
   position: relative;
   margin: 0;
@@ -13,6 +14,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 header {
   background-color: rgb(128, 208, 207);
   background-size: cover;
@@ -25,6 +27,7 @@ header {
   height: 200px;
   background-image: url(nubes.png);
 }
+
   h1 {
     font-family: "Ghibli";
     font-size: 40px;
@@ -36,6 +39,7 @@ header {
     left: 50%;
     transform: translate(-50%, -250%);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.567), 2px 2px 2em rgb(78, 180, 193);
+
   }
   #logo {
     width: 300px;
@@ -55,18 +59,21 @@ header {
     flex-wrap: wrap;
     transform: scaleX(-1) translate(400px, 0px);
   }
+
 main {
   display: flex;
   justify-content: center;
 }
+
   .order {
     position: absolute;
     display: flex;
     flex-direction: row;
   }
+
   #order {
-    background-color: #FFFFFF;
-    color: #5BCFCC;
+    background-color: #ffffff;
+    color: #5bcfcc;
     border-radius: 25px;
     text-align: center;
     margin-left: 20px;
@@ -78,9 +85,10 @@ main {
     flex-wrap: nowrap;
     flex-wrap: wrap;
   }
+
   #directors {
-    background-color: #FFFFFF;
-    color: #5BCFCC;
+    background-color: #ffffff;
+    color: #5bcfcc;
     border-radius: 25px;
     text-align: center;
     margin-left: 20px;
@@ -92,8 +100,9 @@ main {
     flex-wrap: nowrap;
     flex-wrap: wrap;
   }
+
   .barra {
-    background-color: #F9CCC8;
+    background-color: #f9ccc8;
     background-size: cover;
     display: flex;
     flex-direction: row;
@@ -104,6 +113,7 @@ main {
     height: 70px;
     /* box-shadow:2px 2px 8px 4px rgba(0, 0, 0, 0.2); */
   }
+
   #root {
     position: static;
     align-items: top;
@@ -116,6 +126,8 @@ main {
     margin-top: 6em;
     margin-bottom: 30px;
   }
+
+
   .card {
     align-items: top;
     text-align: center;
@@ -129,6 +141,7 @@ main {
     /* box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.2); */
     height: 350px;
   }
+
   .card img {
     margin-top: 2.5em;
     align-items: top;
@@ -139,10 +152,11 @@ main {
     flex-wrap: nowrap;
     justify-content: center;
     box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.2);
+
   }
+
   .card img:hover {
     filter: grayscale(1);
-    transition: all 0.6% ease;
   }
 /* título */
   h2 {
@@ -161,7 +175,6 @@ main {
     font-size: 15px;
     flex-wrap: nowrap;
     justify-content: center;
-    text-overflow: 200px;
     background-color: rgb(118, 209, 206, 1);
     line-height: 30px;
     border-radius: 5px 5px 5px 5px;
@@ -186,20 +199,70 @@ main {
     flex-wrap: nowrap;
     justify-content: center;
     padding-top: 3px;
-    color: #5BCFCC;
+    color: #5bcfcc;
     font-size: 20px;
   }
 /* description */
-  p2{
+p2{
+  font-size: 13px;
+  justify-content: center;
+}
+/* gender */
+  h4{
     font-size: 13px;
     color: #000000;
-    transform: translate(0px, 50em);
-    width: 330px;
-    margin: 20px 20px 0px 20px;
   }
+
   .close{
-    transform: translate(0, 100px);
+    justify-content: center;
+    background-color: #5bcfcc;
   }
+  a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+    color: white;
+  }
+
+
+footer {
+  background-color: #F9CCC8;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transform: translate(0,135em);
+}
+
+  p3 {
+    font-family: 'Ghibli';
+  }
+
+  .modal {
+    background-color:#ffffff;
+    border-radius: 10px;
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+
+  }
+  .modal::backdrop {
+    background: rgb(0 0 0 / 0.4);
+  }
+
+  p4{
+    font-weight: 550;
+    transform: translate(0px, 100px);
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 13px;
+    color:#5bcfcc;
+    font-size:15px;
+    padding: 100px;
+  }
+
   @media (max-width: 600px) {
     #order,
     #directors,
@@ -211,31 +274,15 @@ main {
     }
     h1 {
       font-size: 20px;
+      margin-top: 60px;
+    }
+    footer{
+      position: absolute;
+      transform: translate(0,530em);
     }
     #kodama{
       width: 50px;
       transform: translate(150px,0);
     }
-  }
-footer {
-  background-color: #F9CCC8;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  transform: translate(0,135em);
-}
-  p3 {
-    font-family: 'Ghibli';
-  }
-  .modal {
-    background-color:#ffffff;
-    border-radius: 10px;
-    width: 500px;
-    height: 500px;
-    padding: 10px;
-  }
-  .modal::backdrop {
-    background: rgb(0 0 0 / 0.4);
+
   }

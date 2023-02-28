@@ -45,7 +45,7 @@ const titleImage = (movies) => {
         if ( movieName === moviesTitleGender[i].name){
           const femaleGender = moviesTitleGender[i].female;
           const maleGender = moviesTitleGender[i].male;
-          const genders = document.createElement('p4');
+          const genders = document.createElement('h4');
           genders.textContent = `Female: ${femaleGender} Male: ${maleGender}`;
           movieGender.appendChild(genders);
         }        
