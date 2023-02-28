@@ -2,7 +2,6 @@ html {
   font-family: sans-serif;
   color: white;
 }
-
 body {
   position: relative;
   margin: 0;
@@ -14,7 +13,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
 header {
   background-color: rgb(128, 208, 207);
   background-size: cover;
@@ -27,7 +25,6 @@ header {
   height: 200px;
   background-image: url(nubes.png);
 }
-
   h1 {
     font-family: "Ghibli";
     font-size: 40px;
@@ -39,7 +36,6 @@ header {
     left: 50%;
     transform: translate(-50%, -250%);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.567), 2px 2px 2em rgb(78, 180, 193);
-
   }
   #logo {
     width: 300px;
@@ -59,21 +55,18 @@ header {
     flex-wrap: wrap;
     transform: scaleX(-1) translate(400px, 0px);
   }
-
 main {
   display: flex;
   justify-content: center;
 }
-
   .order {
     position: absolute;
     display: flex;
     flex-direction: row;
   }
-
   #order {
-    background-color: #ffffff;
-    color: #5bcfcc;
+    background-color: #FFFFFF;
+    color: #5BCFCC;
     border-radius: 25px;
     text-align: center;
     margin-left: 20px;
@@ -85,10 +78,9 @@ main {
     flex-wrap: nowrap;
     flex-wrap: wrap;
   }
-
   #directors {
-    background-color: #ffffff;
-    color: #5bcfcc;
+    background-color: #FFFFFF;
+    color: #5BCFCC;
     border-radius: 25px;
     text-align: center;
     margin-left: 20px;
@@ -100,9 +92,8 @@ main {
     flex-wrap: nowrap;
     flex-wrap: wrap;
   }
-
   .barra {
-    background-color: #f9ccc8;
+    background-color: #F9CCC8;
     background-size: cover;
     display: flex;
     flex-direction: row;
@@ -113,7 +104,6 @@ main {
     height: 70px;
     /* box-shadow:2px 2px 8px 4px rgba(0, 0, 0, 0.2); */
   }
-
   #root {
     position: static;
     align-items: top;
@@ -126,7 +116,6 @@ main {
     margin-top: 6em;
     margin-bottom: 30px;
   }
-
   .card {
     align-items: top;
     text-align: center;
@@ -140,7 +129,6 @@ main {
     /* box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.2); */
     height: 350px;
   }
-
   .card img {
     margin-top: 2.5em;
     align-items: top;
@@ -151,14 +139,12 @@ main {
     flex-wrap: nowrap;
     justify-content: center;
     box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.2);
-
   }
-
   .card img:hover {
     filter: grayscale(1);
     transition: all 0.6% ease;
   }
-
+/* título */
   h2 {
     font-weight: 550;
     transform: translate(0px, 0);
@@ -169,83 +155,51 @@ main {
     line-height: 30px;
     border-radius: 5px 5px 5px 5px;
   }
-
+/* director */
   h3 {
     font-weight: 550;
     font-size: 15px;
-    transform: translate(0px, -250px);
     flex-wrap: nowrap;
     justify-content: center;
-    display: none;
     text-overflow: 200px;
     background-color: rgb(118, 209, 206, 1);
     line-height: 30px;
     border-radius: 5px 5px 5px 5px;
+    color: white;
   }
-
+/* release day*/
   p{
     font-weight: 550;
-    transform: translate(0px, -240px);
+    transform: translate(0px, 0px);
     flex-wrap: nowrap;
+    flex-direction: row;
     justify-content: center;
     padding-top: 3px;
     font-size: 13px;
-    display:none;
-    color: #5bcfcc;
+    color:#5bcfcc;
+    font-size:15px ;
   }
-
+/* rate */
   p1{
     font-weight: 550;
-    transform: translate(0px, -240px);
+    transform: translate(0px, -20px);
     flex-wrap: nowrap;
     justify-content: center;
     padding-top: 3px;
-    display:none;
-    color: #5bcfcc;
-    font-size: 13px;
+    color: #5BCFCC;
+    font-size: 20px;
   }
-
+/* description */
   p2{
-    transform: translate(0px, -240px);
-    flex-wrap: nowrap;
-    justify-content: center;
-    padding-top: 3px;
-    display:none;
+    font-size: 13px;
     color: #000000;
-  }
-
-  #cuadro{
-    background-color:#ffffff;
-    width: 380px;
-    height: 300px;
-    display: none;
-    position: absolute;
-    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-  }
-  .card img:hover ~ #cuadro {
-    display: block;
-    transform: translate(-67px, -360px);
-  }
-  .card img:hover ~ h3 {
-    display: block;
-    transform: translate(0px, -350px);
-  }
-  .card img:hover ~ p{
-    display: block;
-    transform: translate(-50px, -330px);
-  }
-  .card img:hover ~ p1{
-    display: block;
-    transform: translate(50px, -375px);
-  }
-  .card img:hover ~ p2{
-    display: block;
-    transform: translate(-42px, -350px);
+    transform: translate(0px, 50em);
     width: 330px;
-    text-align: justify;
+    margin: 20px 20px 0px 20px;
   }
-
+  .close{
+    transform: translate(0, 100px);
+  }
   @media (max-width: 600px) {
     #order,
     #directors,
@@ -263,7 +217,6 @@ main {
       transform: translate(150px,0);
     }
   }
-
 footer {
   background-color: #F9CCC8;
   height: 100px;
@@ -273,8 +226,16 @@ footer {
   color: white;
   transform: translate(0,135em);
 }
-
   p3 {
     font-family: 'Ghibli';
   }
-  
+  .modal {
+    background-color:#ffffff;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+  }
+  .modal::backdrop {
+    background: rgb(0 0 0 / 0.4);
+  }

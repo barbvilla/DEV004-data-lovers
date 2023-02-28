@@ -46,8 +46,7 @@ export const calculate = function(movies) {
     movieGender.push(femaleCount);
     movieGender.push(maleCount);
     moviesGender.push(movieGender);       
-  }
-  
+  }  
   //console.log(moviesTitleGender);
   return moviesGender
 }
