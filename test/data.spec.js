@@ -61,7 +61,7 @@ describe('mappedTitle', () => {
   const  movies = [{"id": 1, "title":'uno', "generos": ['accion','terror'], "director": "Juan Perez"},
     {"id": 2, "title":'dos', "generos": ['terror'], "director": "Wes Anderson"},
     {"id": 3, "title":'tres', "generos": ['accion', 'comedia'], "director": "Guillermo Totoro"}]
-  it('mappedDirector', () => {
+  it('mappedTitle', () => {
     expect(mappedTitle(movies)).toEqual(['uno', 'dos', 'tres'])
   })
 })
@@ -81,7 +81,7 @@ describe('calculate', () => {
     "name": "Pazu","gender": "Female", "specie": "Human"}, {
     "name": "Satsuki Kusakabe","gender": "Female","specie": "Human"}]}]
 
-  it('mappedDirector', () => {
-    expect(mappedTitle(movies)).toEqual([[1,1], [0,2], [2,0]])
+  it('calculate', () => {
+    expect(calculate(movies)).toEqual([[1,1], [0,2], [2,0]])
   })
 })

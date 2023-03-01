@@ -44,6 +44,8 @@ header {
   #logo {
     width: 300px;
     flex-wrap: wrap;
+    filter: drop-shadow(5px 5px 5px #353535);
+
   }
   #kodama{
     width: 100px;
@@ -51,6 +53,7 @@ header {
     transform: translate(300px, -70px);
     opacity: 0.8;
     flex-wrap: wrap;
+    filter: drop-shadow(5px 5px 5px #353535);
   }
   #kodama1{
     width: 100px;
@@ -58,6 +61,7 @@ header {
     opacity: 0.7;
     flex-wrap: wrap;
     transform: scaleX(-1) translate(400px, 0px);
+    filter: drop-shadow(5px 5px 5px #353535);
   }
 
 main {
@@ -111,7 +115,6 @@ main {
     text-align: center;
     align-items: center;
     height: 70px;
-    /* box-shadow:2px 2px 8px 4px rgba(0, 0, 0, 0.2); */
   }
 
   #root {
@@ -138,7 +141,6 @@ main {
     width: 250px;
     background: rgb(128, 208, 206, 0.5);
     border-radius: 25px 5px 5px 5px;
-    /* box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.2); */
     height: 350px;
   }
 
@@ -262,7 +264,6 @@ footer {
     font-size:15px;
     padding: 100px;
   }
-
   @media (max-width: 600px) {
     #order,
     #directors,
@@ -277,12 +278,111 @@ footer {
       margin-top: 60px;
     }
     footer{
-      position: absolute;
-      transform: translate(0,530em);
+      background-color: #F9CCC8;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      transform: translate(0,135em);
     }
     #kodama{
       width: 50px;
       transform: translate(150px,0);
+    }
+
+  }
+  /* ipad */
+  @media (min-width: 820px) {
+    #order,
+    #directors{}
+
+    #logo {
+      width: 150px;
+      flex-wrap: wrap;
+      filter: drop-shadow(5px 5px 5px #353535);
+    }
+    header {
+      height: 100px;
+    }
+    h1 {
+      font-size: 30px;
+      font-weight: 50;
+      text-align: center;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -140%);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.567), 2px 2px 2em rgb(78, 180, 193);
+    }
+    footer{
+      position: absolute;
+      transform: translate(0,270em);
+    }
+    #kodama{
+      width: 100px;
+      transform: translate(250px,-70px);
+    }
+    #kodama1{
+      width: 100px;
+      position: absolute;
+      opacity: 0.7;
+      flex-wrap: wrap;
+      transform: scaleX(-1) translate(300px, 0px);
+      filter: drop-shadow(5px 5px 5px #353535);
+    }
+
+  }
+
+  @media (min-width: 1000px) {
+
+    header {
+      background-color: rgb(128, 208, 207);
+      background-size: cover;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      text-align: center;
+      align-items: center;
+      height: 200px;
+      background-image: url(nubes.png);
+    }
+    h1 {
+      font-family: "Ghibli";
+      font-size: 40px;
+      font-weight: 50;
+      text-align: center;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -150%);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.567), 2px 2px 2em rgb(78, 180, 193);
+    }
+    footer{
+      background-color: #F9CCC8;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      transform: translate(0,145em);
+      width: 100%;
+    }
+    #kodama{
+      width: 100px;
+      position: absolute;
+      transform: translate(300px, -70px);
+      opacity: 0.8;
+      flex-wrap: wrap;
+      filter: drop-shadow(5px 5px 5px #353535);
+    }
+    #logo{
+      width: 300px;
+      flex-wrap: wrap;
+      filter: drop-shadow(5px 5px 5px #353535);
     }
 
   }

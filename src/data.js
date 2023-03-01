@@ -1,8 +1,10 @@
+//orden alfabetico a-z
 export const alphabeticOrderAsc = function (movies) {
   const orderAZ = movies.sort((a, b) => (a.title > b.title) ? 1 : (a.title < b.title) ? -1 : 0);
   return orderAZ;  
 };
 
+//orden alfabetico z-a
 export const alphabeticOrderDes = function (movies) {
   const orderZA = movies.sort((a, b) => (a.title > b.title) ? -1 : (a.title < b.title) ? 1 : 0);
   return orderZA;
@@ -22,11 +24,13 @@ export const filteredDirector = function(movies) {
   return onlyDirectorName
 }
 
+//extrae nombre de las peliculas
 export const mappedTitle = function(movies) {
   const titles = movies.map(anyArray => anyArray.title)
   return titles
 }
 
+//cuenta los generos por pelicula
 export const calculate = function(movies) {  
   const moviesGender = [];
   for (let i=0; i<movies.length; i++){
@@ -50,6 +54,3 @@ export const calculate = function(movies) {
   //console.log(moviesTitleGender);
   return moviesGender
 }
-
-  
-

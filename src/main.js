@@ -4,7 +4,6 @@ import data from "./data/ghibli/ghibli.js";
 
 const movies = data.films;
 const root = document.getElementById("root");
-//console.log(movies);
 
 const titleImage = (movies) => {
   for (const movie of movies) {
@@ -20,13 +19,18 @@ const titleImage = (movies) => {
         <p>Rate:  ${movie.rt_score}</p>
         <p2>${movie.description}</p2>
         <div id="charactersgender"></div>
-        <button class="close"><a href="index.html">volver</a></button>
-      </dialog>
-    `;
+        <form method="dialog">
+          <button class="close">Close</button>
+        </form>
+      </dialog>`;
     root.appendChild(movieDiv);
-    const modal = document.querySelector(`#modal-${movie.id}`);
+    const modal = document.querySelector(`#modal-${movie.id}`);    
     movieDiv.addEventListener("click", () => {
       modal.showModal();    
+    })
+    const closeModal = modal.querySelector(".close");
+    closeModal.addEventListener("click", () => {
+      modal.close();
     });
     const movieGender = movieDiv.querySelector("#charactersgender");
     const titles = mappedTitle(movies);
@@ -56,8 +60,8 @@ const titleImage = (movies) => {
 };
 titleImage(movies);
 
-const copyMovies = structuredClone(movies);
 
+const copyMovies = structuredClone(movies);
 const orderBy = (copyMovies) => {
   const buttonSelection = document.getElementById("order")
   buttonSelection.addEventListener("change", () => {
@@ -79,6 +83,7 @@ const orderBy = (copyMovies) => {
   });
 }
 orderBy(copyMovies);
+
 
 const director = mappedDirector(movies);
 const nameDirector = filteredDirector(director);
